@@ -31,11 +31,14 @@ namespace EhodBoutiqueEnLigne.Models.Services
                 case ("Spanish"):
                     culture = "es";
                     break;
+                case ("Wolof"):
+                    culture = "sn";
+                    break;
                 default:
                     culture = "en";
                     break;
             }
-            
+
             return culture;
         }
 
