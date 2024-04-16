@@ -3,23 +3,22 @@ Dépôt de l’étudiant pour le projet 3 du parcours Développeur Back-End .NET
 
 Ce projet possède une base de données intégrée qui sera créée lorsque l’application sera exécutée pour la première fois. Pour la créer correctement, vous devez satisfaire aux prérequis ci-dessous et mettre à jour les chaînes de connexion pour qu’elles pointent vers le serveur MSSQL qui est exécuté sur votre PC en local.
 
-**Prérequis** : MSSQL Developer 2019 ou Express 2019 doit être installé avec Microsoft SQL Server Management Studio (SSMS).
+**Prérequis** : Télécharger et executer l'image Azure SQL Edge de microsoft.
+                Installer Azure Data Studio 
 
-MSSQL : https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads
+Azure SQL Edge : https://hub.docker.com/_/microsoft-azure-sql-edge
 
-SSMS : https://docs.microsoft.com/fr-fr/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+Azure Data Studio  : https://azure.microsoft.com/fr-fr/products/data-studio
 
-*Remarque : les versions antérieures de MSSQL Server devraient fonctionner sans problèmes, mais elles n’ont pas été testées.
 
 *Dans le projet P3AddNewFunctionalityDotNetCore, ouvrez le fichier appsettings.json.*
 
 Vous avez la section ConnectionStrings qui définit les chaînes de connexion pour les 2 bases de données utilisées dans cette application.
 
-      "ConnectionStrings":
-      {
-        "P3Referential": "Server=.;Database=P3Referential-2f561d3b-493f-46fd-83c9-6e2643e7bd0a;Trusted_Connection=True;MultipleActiveResultSets=true",
-        "P3Identity": "Server=.;Database=Identity;Trusted_Connection=True;MultipleActiveResultSets=true"
-      }
+"ConnectionStrings": {
+    "EhodBDD": "Server=localhost,1433;Database=EhodBoutiqueEnLigne;User=SA;Password=!Password;MultipleActiveResultSets=true",
+    "EhodVLUtilisateurs": "Server=localhost,1433;Database=Identit;User=SA;Password=!Password;MultipleActiveResultSets=true"
+  }
   
 **P3Referential** - chaîne de connexion à la base de données de l’application.
 
