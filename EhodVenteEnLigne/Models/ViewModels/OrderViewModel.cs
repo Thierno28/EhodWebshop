@@ -13,22 +13,23 @@ namespace EhodBoutiqueEnLigne.Models.ViewModels
         [BindNever]
         public ICollection<CartLine> Lines { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingName")]
-        public string Name { get; set; }
+          [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingName")]
+         public string Name { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingAddress")]
-        public string Address { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingCity")]
-        public string City { get; set; }
+         [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingAddress")]
+         public string Address { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingZipCode")]
-        public string Zip { get; set; }
+         [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingCity")]
+         public string City { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingCountry")]
-        public string Country { get; set; }
+         [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingZipCode")]
+         public string Zip { get; set; }
 
-        [BindNever]
-        public DateTime Date { get; set; }
-    }
-}
+         [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingCountry")]
+         public string Country { get; set; }
+
+         [BindNever]
+         public DateTime Date { get; set; }
+     }
+ }

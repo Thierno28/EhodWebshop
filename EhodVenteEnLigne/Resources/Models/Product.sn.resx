@@ -116,19 +116,25 @@
    <resheader name="writer">
      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
    </resheader>
-   <data name="ErrorMissingName" xml:space="preserve">
-     <value>Jooxe len sen tour</value>
-   </data>
-   <data name="ErrorMissingPrice" xml:space="preserve">
-     <value>Jooxe len njek bi</value>
-   </data>
-   <data name="ErrorMissingStock" xml:space="preserve">
-     <value>Jooxe len li dess</value>
-   </data>
-   <data name="ErrorPriceValue" xml:space="preserve">
-     <value>Njek bi dafa wara eup séro (0)</value>
-   </data>
-   <data name="ErrorStockValue" xml:space="preserve">
-     <value>Li dess dafa wara eup séro (0)</value>
-   </data>
- </root>
+   <data name="MissingName" xml:space="preserve">
+    <value>Joxel tour bi</value>
+  </data>
+  <data name="MissingPrice" xml:space="preserve">
+    <value>Joxel njek bi</value>
+  </data>
+  <data name="MissingQuantity" xml:space="preserve">
+    <value>Joxel li dess</value>
+  </data>
+  <data name="PriceNotANumber" xml:space="preserve">
+    <value>Njek bi nombar la wara nek</value>
+  </data>
+  <data name="PriceNotGreaterThanZero" xml:space="preserve">
+    <value>Ndjek bi da wara eup séro (0)</value>
+  </data>
+  <data name="StockNotAnInteger" xml:space="preserve">
+    <value>Xayma li dess dafa wara nek entier</value>
+  </data>
+  <data name="StockNotGreaterThanZero" xml:space="preserve">
+    <value>Xayma li dess dafa wara eup séro (0) </value>
+  </data>
+</root>

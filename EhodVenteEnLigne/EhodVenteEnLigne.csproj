@@ -62,6 +62,15 @@
 
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\Models\Order.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Models\Product.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Models\Product.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Models\ViewModels\LanguageViewModel.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
